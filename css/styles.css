@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css2?family=Amiko:wght@100;200;300;400;500;600;700&display=swap);
+
+body {
+  font-family: "Amiko", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+body {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+.city,
+.menu {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: fixed;
+}
+.menu-title {
+  font-size: 7rem;
+}
+.menu h1 {
+  color: antiquewhite;
+  transition: 0.5s;
+}
+.city h2 {
+  color: antiquewhite;
+  transition: 0.5s;
+}
+a {
+  font-size: 2.5rem;
+  color: aliceblue;
+  position: relative;
+}
+.city-title {
+  font-size: 6rem;
+}
+.menu {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/menu-image.jpg);
+}
+.paris-city {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/paris.jpg);
+}
+.moscow-city {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/moscow.jpg);
+}
+.istanbul-city {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/istanbul.jpg);
+}
+.london-city {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/london.jpg);
+}
+.dubai-city {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/dubai.jpg);
+}
+.city h2:hover,
+.menu h1:hover {
+  transform: scale(1.5);
+}
+a::before {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 0%;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -0.5rem;
+  transition: 0.6s;
+}
+a:hover::before {
+  width: 100%;
+}
+a:active::before {
+  width: 0%;
+}
